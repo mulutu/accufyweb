@@ -18,7 +18,7 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
-    <MaxWidthWrapper className="pt-5 pb-5">
+    <MaxWidthWrapper className="pt-3 pb-3">
       <Container className="flex flex-wrap " >
         <div className=" flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
@@ -32,7 +32,18 @@ const Hero = () => {
             <p className='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
               A unique and powerful software suite to transform the way you work. Designed for businesses of all sizes, built by a company that values your privacy.
             </p>
-            <Button />
+            <div className="flex flex-row w-full">
+              <Button
+                className="flex p-7 mr-4 text-white text-center justify-center text-lg"
+              >
+                Start a 1 Month Free trial
+              </Button>
+              <div className="flex flex-col text-center justify-center">
+                <span className="flex text-lg font-medium">Call us +254720844418</span>
+                <span className="flex text-md font-medium">For any question</span>
+              </div>
+            </div>
+
           </div>
         </div>
         <div className="flex items-center justify-center block w-full lg:w-1/2">

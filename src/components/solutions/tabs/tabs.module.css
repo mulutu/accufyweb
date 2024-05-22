@@ -1,0 +1,23 @@
+/* Custom styles for the round bullets if needed */
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.custom-list li::before {
+    content: '';
+    width: 0.625rem;
+    /* 2.5px */
+    height: 0.625rem;
+    /* 2.5px */
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}

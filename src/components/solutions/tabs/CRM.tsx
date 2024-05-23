@@ -1,12 +1,12 @@
-const Tab2 = () => {
+const CRM = () => {
     return (
         <div className="flex flex-row w-full p-4">
             <div className="flex basis-1/2">
                 <h1 className='items-left font-palanquin text-4xl max-sm:text-[42px] max-sm:leading-[62px] font-normal'>
                     <span className='flex items-left pb-5'>
-                        ERP for SMEs
+                        CRM for SMEs
                     </span>
-                    <span className='flex text-lg'>Comprehensive ERP platform to power your business.</span>
+                    <span className='flex text-lg'>Cuctomer focused CRM platform to power your business.</span>
                     <span className='flex text-lg'>It comes out of the box with the following features:</span>
                     <ul className='custom-list'>
                         <li className='flex text-lg '>Inventory Management</li>
@@ -30,4 +30,4 @@ const Tab2 = () => {
     );
 };
 
-export default Tab2;
+export default CRM;

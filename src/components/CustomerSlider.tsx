@@ -2,8 +2,6 @@
 
 import React from 'react'
 import { useEffect, useState } from 'react';
-import Slide1 from './slides/Slide1';
-import TextSlider from './slides/TextSlider';
 import MaxWidthWrapper from './MaxWidthWrapper';
 
 interface CustomSliderProps {

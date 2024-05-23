@@ -22,8 +22,13 @@ function Slide3() {
         </div>
       </div>
       <div className='flex w-1/3'>
-        <div className='flex w-full h-full bg-white rounded-[20px] p-20'>
-
+        <div className='flex w-full h-full bg-white rounded-[20px] p-15 justify-center items-center'>
+          <img
+            src='/images/customer2.svg'
+            className='flex p-0 m-0 justify-center items-center'
+            height={150}
+            width={150}
+          />
         </div>
       </div>
     </div>

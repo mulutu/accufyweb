@@ -24,13 +24,13 @@ const Hero = () => {
           <div className="max-w-2xl mb-8">
             <h1 className='mt-10 font-palanquin text-5xl max-sm:text-[42px] max-sm:leading-[62px] font-normal'>
               <span className=' xl:whitespace-nowrap relative z-10 pr-10'>
-                Your life's work,
+                Work smarter, not harder
               </span>
               <br />
-              <span className='xl:whitespace-nowrap relative z-10 pr-10'>powered by our life's work</span>
+              <span className='xl:whitespace-nowrap relative z-10 pr-10'>solutions for busy SMEs.</span>
             </h1>
             <p className='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
-              A unique and powerful software suite to transform the way you work. Designed for businesses of all sizes, built by a company that values your privacy.
+              Solutions tailored specifically for busy SMEs, to streamline operations, boost productivity, and give you more time to focus on what matters most.
             </p>
             <div className="flex flex-row w-full">
               <Button

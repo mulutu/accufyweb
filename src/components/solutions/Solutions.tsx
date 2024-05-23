@@ -4,13 +4,13 @@ import React from 'react'
 import MaxWidthWrapper from '../MaxWidthWrapper'
 import { useState } from 'react';
 import ERP from '@/components/solutions/tabs/ERP';
-import Tab2 from '@/components/solutions/tabs/Tab2';
+import CRM from '@/components/solutions/tabs/CRM';
 import Tab3 from '@/components/solutions/tabs/Tab3';
 import { Button } from "@/components/ui/button"
 
 const tabs = [
     { name: 'ERP', component: <ERP /> },
-    { name: 'CRM', component: <Tab2 /> },
+    { name: 'CRM', component: <CRM /> },
     { name: 'Property Management', component: <Tab3 /> },
     { name: 'Campaigns & Promotions', component: <Tab3 /> },
     { name: 'Customer Survey', component: <Tab3 /> },
@@ -60,14 +60,14 @@ function Solutions(props: Props) {
                     <span className='flex w-full items-center pl-2 text-2x1 font-medium capitalize'>24x7 Support</span>
                 </div>
             </div>
-            <div className="w-full justify-center  mx-auto pt-4">
+            <div className="w-full justify-center  mx-auto pt-10">
                 <div className="flex justify-around">
                     {tabs.map((tab, index) => (
                         <button
                             key={index}
-                            className={`flex-auto w-64 py-2 text-center focus:outline-none rounded-t-lg ${activeTab === index
+                            className={`flex-auto w-64 py-2 text-center font-bold focus:outline-none rounded-t-lg ${activeTab === index
                                 ? 'bg-white text-blue-500'
-                                : 'text-gray-500 hover:text-gray-700'
+                                : 'text-gray-600 hover:text-gray-800'
                                 }`}
                             onClick={() => setActiveTab(index)}
                         >
@@ -75,7 +75,7 @@ function Solutions(props: Props) {
                         </button>
                     ))}
                 </div>
-                <div className="p-4 bg-white rounded-lg">
+                <div className="bg-white rounded-lg p-10">
                     {tabs[activeTab].component}                    
                 </div>
             </div>

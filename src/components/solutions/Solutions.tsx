@@ -6,6 +6,7 @@ import { useState } from 'react';
 import ERP from '@/components/solutions/tabs/ERP';
 import Tab2 from '@/components/solutions/tabs/Tab2';
 import Tab3 from '@/components/solutions/tabs/Tab3';
+import { Button } from "@/components/ui/button"
 
 const tabs = [
     { name: 'ERP', component: <ERP /> },
@@ -33,8 +34,8 @@ function Solutions(props: Props) {
                     <span className='flex justify-center items-center'>you can find a solution with us</span>
                 </h1>
             </div>
-            <div className='flex flex-row w-full justify-center items-center p-5 font-palanquin'>
-                <div className='flex flex-row block w-200 p-5'>
+            <div className='flex flex-row w-full justify-center items-center font-palanquin'>
+                <div className='flex flex-row block w-200 p-2'>
                     <img
                         src='/icons/tick-icon.webp'
                         width={50}
@@ -42,19 +43,19 @@ function Solutions(props: Props) {
                     />
                     <span className='flex w-full items-center pl-2 text-2x1 font-medium capitalize'>Quaranteed quality</span>
                 </div>
-                <div className='flex flex-row block w-200 p-5'>
+                <div className='flex flex-row block w-200 p-2'>
                     <img
-                         src='/icons/tick-icon.webp'
-                         width={50}
-                         height={50}
+                        src='/icons/tick-icon.webp'
+                        width={50}
+                        height={50}
                     />
                     <span className='flex w-full items-center pl-2 text-2x1 font-medium capitalize'>Intuitive Design</span>
                 </div>
-                <div className='flex flex-row block w-200 p-5'>
+                <div className='flex flex-row block w-200 p-2'>
                     <img
-                         src='/icons/tick-icon.webp'
-                         width={50}
-                         height={50}
+                        src='/icons/tick-icon.webp'
+                        width={50}
+                        height={50}
                     />
                     <span className='flex w-full items-center pl-2 text-2x1 font-medium capitalize'>24x7 Support</span>
                 </div>
@@ -75,7 +76,17 @@ function Solutions(props: Props) {
                     ))}
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                    {tabs[activeTab].component}
+                    {tabs[activeTab].component}                    
+                </div>
+            </div>
+            <div className='flex w-full p-5 pt-20'>
+                <div className='flex flex-row relative  w-full rounded-[12px] p-6 font-palanquin text-2xl max-sm:text-[42px] max-sm:leading-[62px] font-normal bg-gradient-to-r from-blue-700 to-teal-400'>
+                    <span className='text-white'>Explore more solutions from Accufy Tech</span>
+                    <Button
+                        className="flex absolute bg-white hover:bg-gray-50 right-0 top-0 mt-4 mr-4 p-6 mr-4 rounded-lg text-black text-center justify-center text-lg"
+                    >
+                        See all solutions
+                    </Button>
                 </div>
             </div>
         </MaxWidthWrapper>

@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-row w-full">
               <Button
-                className="flex p-7 mr-4 text-white text-center justify-center text-lg"
+                className="flex bg-orange-500 hover:bg-orange-600 p-7 mr-4 text-white text-center justify-center text-lg"
               >
                 Start a 1 Month Free trial
               </Button>

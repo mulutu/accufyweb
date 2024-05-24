@@ -13,8 +13,9 @@ const Nav = (props: Props) => {
             <MaxWidthWrapper>
                 <div className='flex h-16 items-center justify-between'>
                     <a href='/'>
-                        <img
-                            src={"/images/header-logo.svg"}
+                        <Image 
+                            unoptimized
+                            src="/images/header-logo.svg"
                             alt='logo'
                             width={129}
                             height={29}

@@ -130,25 +130,25 @@ export const heroItems = [
     {
         itemIcon: "/icons/crm_1.svg",
         item: "ERP",
-        description: "ERP platform with Inventory Management, POS, Online Shop & HRM. Manage your business on the Go!",
+        description: "Inventory Management, POS & Online Shop; Manage your business on the Go!",
         link:"/"
     },
     {
         itemIcon: "/icons/crm_1.svg",
         item: "Custom website",
-        description: "Supercharge your business with a customer centric website - capture, manage and convert leads",
+        description: "Supercharge your business with a customer centric website",
         link:"/"
     },
     {
         itemIcon: "/icons/crm_1.svg",
         item: "CRM",
-        description: "Comprehensive CRM platform for your customer facing operations and teams",
+        description: "Comprehensive CRM platform for your customer facing operations",
         link:"/"
     },
     {
         itemIcon: "/icons/crm_1.svg",
         item: "Customer Feedback",
-        description: "Do you know what customers think about your products and services? Our customer survey tool will help you.",
+        description: "Do you know what customers think about your products and services?",
         link:"/"
     },
 ];

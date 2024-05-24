@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-
+import Image from 'next/image';
 import { heroItems } from "../constants";
 import { bigShoe1 } from "../../public/images";
 import Container from "@/components/container/container";
@@ -42,15 +42,16 @@ const Hero = () => {
             {heroItems.map((heroItem) => (
               <Link href={heroItem.link} className="flex w-full block p-1 items-center p-3 rounded-md hover:bg-gray-100">
                 <div className="flex flex-row w-1/6 block">
-                  <img
+                  <Image
                     className="p-1"
                     src={heroItem.itemIcon}
                     height={50}
                     width={50}
+                    alt=""
                   />
                 </div>
                 <div className="flex flex-col w-5/6 block">
-                  <span className="w-full fletext-base text-[22px] font-normal">{heroItem.item}</span><br />
+                  <span className="w-full fletext-base text-[18px] font-normal">{heroItem.item}</span><br />
                   <span className="w-full text-base text-[13px] font-normal leading-5">{heroItem.description}</span>
                 </div>
               </Link>

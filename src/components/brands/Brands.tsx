@@ -4,6 +4,8 @@ import MaxWidthWrapper from '../MaxWidthWrapper';
 import CarouselItem from './CarouselItem';
 import Slider from '@/components/brands/Slider';
 import Carousel from './Carousel';
+import Link from 'next/link';
+import { brands } from '@/constants';
 
 type Props = {}
 
@@ -22,56 +24,17 @@ function Brands(props: Props) {
                 <span className='flex items-center block text-sm font-[600] uppercase '>Brands that trust us</span>
             </div>
             <div className='flex w-full justify-center items-center p-5 pb-0'>
-                <img
-                    src="/images/brands/Enfinite-Logo-01.png"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
-                <img
-                    src="/images/brands/heleqlogo.svg"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
-                <img
-                    src="/images/brands/kocela-original.png"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
-                <img
-                    src="/images/brands/Ronfordlogo.svg"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
-                <img
-                    src="/images/brands/tendeLogo.png"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
-                <img
-                    src="/images/brands/apple_price_logo.png"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
-                
-                <img
-                    src="/images/brands/deltastream.png"
-                    alt=""
-                    width={130}
-                    height={50}
-                    className='mr-10'
-                />
+                {brands.map((brand) => (
+                    <Link href={brand.website} target='_blank'>
+                        <img
+                            src={brand.logo}
+                            alt=""
+                            width={130}
+                            height={50}
+                            className='mr-10'
+                        />
+                    </Link>
+                ))}
             </div>
         </MaxWidthWrapper>
     )

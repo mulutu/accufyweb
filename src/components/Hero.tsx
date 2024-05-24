@@ -17,16 +17,16 @@ const Hero = () => {
     <MaxWidthWrapper className="pt-3 pb-3">
       <Container className="flex flex-wrap " >
         <div className=" flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className='mt-10 font-palanquin text-5xl max-sm:text-[42px] max-sm:leading-[62px] font-normal'>
+          <div className="max-w-2xl mb-8 items-start">
+            <h1 className='mt-10 font-palanquin text-5xl max-sm:text-[42px] leading-[60px] max-sm:leading-[62px] font-normal'>
               <span className=' xl:whitespace-nowrap relative z-10 pr-10'>
-                Work smarter, not harder
+                Work <p className="inline-block border-b-2 border-orange-500 font-bold">smarter</p>, not harder
               </span>
               <br />
-              <span className='xl:whitespace-nowrap relative z-10 pr-5'>for YOUR business.</span>
+              <span className='xl:whitespace-nowrap relative z-10 pr-5'>for your business.</span>
             </h1>
-            <p className='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
-              Solutions tailored specifically for busy SMEs, to streamline operations, boost productivity, and give you more time to focus on what matters most.
+            <p className='font-montserrat text-slate-gray text-lg leading-6 mt-6 mb-14 sm:max-w-sm'>
+              Solutions tailored specifically for SMEs, to streamline operations, boost productivity, and give you more time to focus on what matters most.
             </p>
             <div className="flex flex-row w-full">
               <EmailCapture />

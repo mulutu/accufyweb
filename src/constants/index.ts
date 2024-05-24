@@ -88,6 +88,44 @@ export const reviews = [
     }
 ];
 
+export const brands =[
+    {
+        brandname: "Kocela",
+        website: "https://kocela.com/",
+        logo: "/images/brands/kocela-original.png"
+    },
+    {
+        brandname: "Enfinite",
+        website: "https://www.enfinitesolutions.com/",
+        logo: "/images/brands/Enfinite-Logo-01.png"
+    },
+    {
+        brandname: "Heleq",
+        website: "https://heleq.com/",
+        logo: "/images/brands/heleqlogo.svg"
+    },
+    {
+        brandname: "Ronford",
+        website: "https://ronford.dev/",
+        logo: "/images/brands/Ronfordlogo.svg"
+    },
+    {
+        brandname: "TendePay",
+        website: "https://tendepay.com",
+        logo: "/images/brands/tendeLogo.png"
+    },
+    {
+        brandname: "Apple Price",
+        website: "https://appleprice.co.ke/",
+        logo: "/images/brands/apple_price_logo.png"
+    },
+    {
+        brandname: "Delta Stream",
+        website: "https://appleprice.co.ke/",
+        logo: "/images/brands/deltastream.png"
+    },
+]
+
 export const heroItems = [
     {
         itemIcon: "/icons/crm_1.svg",

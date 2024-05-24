@@ -8,7 +8,7 @@ interface CustomSliderProps {
     slides: React.ReactNode[];
 }
 
-export default function CustomerSlider<CustomSliderProps>({ slides }) {
+export default function CustomerSlider<CustomSliderProps>({ slides } :  any) {
 
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 

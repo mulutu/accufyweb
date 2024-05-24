@@ -30,7 +30,7 @@ export default function Home() {
       <section className="flex w-full block padding">
         <Brands />
       </section>
-      <section className="flex w-full block bg-pale-blue padding bg-blue-50 bg-opacity-50">
+      <section className="flex w-full block bg-pale-blue padding bg-blue-100 bg-opacity-50">
         <Solutions />
       </section>
       <section className="flex w-full h-full block padding pb-0 pt-0">

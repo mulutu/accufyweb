@@ -40,11 +40,11 @@ const Hero = () => {
         <div className="flex items-center justify-center block w-full lg:w-2/5 ">
           <div className="w-full items-center block justify-between border border-blue-100 rounded-md float-right ml-20 bg-white p-2  ">
             {heroItems.map((heroItem, index) => (
-              <Link key={index} href={heroItem.link} className="flex w-full p-1 items-center p-3 rounded-md hover:bg-gray-100">
-                <div key={index} className="flex flex-row w-1/6 ">
+              <Link key={index} href={heroItem.link} className="flex w-full p-1 items-center p-3 rounded-md ">
+                <div key={index} className="flex flex-row w-1/6 m-2">
                   <Image
                     key={index}
-                    className="p-1"
+                    className="p-1 filter grayscale(100%)"
                     src={heroItem.itemIcon}
                     height={40}
                     width={40}
@@ -52,8 +52,8 @@ const Hero = () => {
                   />
                 </div>
                 <div key={index} className="flex flex-col w-5/6 ">
-                  <span key={index} className="flex w-full fletext-base text-[16px] font-montserrat text-black p-0 m-0 font-normal">{heroItem.item}</span>
-                  <span key={index} className="flex w-full text-base text-[12px] font-normal leading-5 text-slate-700">{heroItem.description}</span>
+                  <span key={index} className="flex w-full text-black  text-[18px] font-[500]">{heroItem.item}</span>
+                  <span key={index} className="flex w-full text-slate-700 text-[13px] font-normal leading-5 ">{heroItem.description}</span>
                 </div>
               </Link>
             ))}

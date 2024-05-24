@@ -93,12 +93,12 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "ERP with POS", link: "/" },
+            { name: "CRM", link: "/" },
+            { name: "Custom website", link: "/" },
+            { name: "AI Tools", link: "/" },
+            { name: "Customer surveys", link: "/" },
+            { name: "Property Management", link: "/" },
         ],
     },
     {
@@ -114,8 +114,8 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "info@accufyapps.com", link: "mailto:info@accufyapps.com" },
+            { name: "+254720844418", link: "tel:+254720844418" },
         ],
     },
 ];

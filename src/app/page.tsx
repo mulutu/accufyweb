@@ -3,7 +3,6 @@ import styles from "./home.module.css";
 import {
   CustomerReviews,
   Footer,
-  Hero,
   PopularProducts,
   Services,
   SpecialOffer,
@@ -16,6 +15,8 @@ import CustomerSlider from "@/components/CustomerSlider";
 import Slide1 from '@/components/slides/Slide1';
 import Slide2 from '@/components/slides/Slide2';
 import Slide3 from '@/components/slides/Slide3';
+import Hero from "@/components/Hero";
+import EmailNewsletter from "@/components/EmailNewsletter";
 
 export default function Home() {
 
@@ -34,6 +35,9 @@ export default function Home() {
       </section>
       <section className="flex w-full h-full block padding pb-0 pt-0">
         <CustomerSlider slides={slides}  />
+      </section>
+      <section className="flex w-full h-full block padding pb-0 pt-0">
+        <EmailNewsletter />
       </section>
     </>
   );

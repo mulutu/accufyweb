@@ -21,13 +21,12 @@ export default function CustomerSlider<CustomSliderProps>({ slides }) {
     }, [slides.length]);
 
     return (
-        <MaxWidthWrapper className='flex flex-col w-full h-screen'>
+        <MaxWidthWrapper className='flex flex-col w-full h-[550px]'>
             <div className=" flex justify-center w-full pt-1 pb-10">
                 <h1 className='mt-10 items-center font-palanquin text-4xl max-sm:text-[42px] max-sm:leading-[62px] font-normal'>
                     <span className='flex justify-center items-center'>
-                        Whatever your business goals may be,
+                        What they say about our solutions and products
                     </span>
-                    <span className='flex justify-center items-center'>you can find a solution with us</span>
                 </h1>
             </div>
             <div className=" relative w-full h-screen">
@@ -42,7 +41,7 @@ export default function CustomerSlider<CustomSliderProps>({ slides }) {
                         </div>
                     ))}
                 </div>
-                <div className="absolute bottom-4 top-2/3 left-0 w-full flex justify-center">
+                <div className="absolute bottom-4 top-3/4 left-0 w-full flex justify-center">
                     {slides.map((_, index) => (
                         <button
                             key={index}

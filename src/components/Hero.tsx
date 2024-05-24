@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { FaHome, FaInfoCircle, FaEnvelope } from 'react-icons/fa';
+import EmailCapture from "./EmailCapture";
 
 
 const Hero = () => {
@@ -27,23 +28,18 @@ const Hero = () => {
                 Work smarter, not harder
               </span>
               <br />
-              <span className='xl:whitespace-nowrap relative z-10 pr-10'>solutions for busy SMEs.</span>
+              <span className='xl:whitespace-nowrap relative z-10 pr-5'>for YOUR business.</span>
             </h1>
             <p className='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
               Solutions tailored specifically for busy SMEs, to streamline operations, boost productivity, and give you more time to focus on what matters most.
             </p>
             <div className="flex flex-row w-full">
-              <Button
-                className="flex bg-orange-500 hover:bg-orange-600 p-7 mr-4 text-white text-center justify-center text-lg"
-              >
-                Start a 1 Month Free trial
-              </Button>
-              <div className="flex flex-col text-center justify-center">
-                <span className="flex text-lg font-medium">Call us +254720844418</span>
-                <span className="flex text-md font-medium">For any question</span>
+              <EmailCapture />
+              <div className="flex flex-col text-center justify-center ml-5">
+                <span className="flex text-md font-medium">Call us +254 720844418</span>
+                <span className="flex text-md font-sm">For any question</span>
               </div>
             </div>
-
           </div>
         </div>
         <div className="flex items-center justify-center block w-full lg:w-1/2">

@@ -25,8 +25,7 @@ const Footer = (props: Props) => {
                 />
               </a>
               <p className='mt-6 text-base leading-7 font-montserrat text-white sm:max-w-sm'>
-                Get shoes ready for the new term at your nearest Nike store. Find
-                Your perfect Size In Store. Get Rewards
+                Solutions tailored specifically for busy SMEs, to streamline operations, boost productivity, and give you more time to focus on what matters most.
               </p>
               <div className='flex items-center gap-5 mt-5'>
                 {socialMedia.map((icon) => (
@@ -75,7 +74,7 @@ const Footer = (props: Props) => {
               />
               <p>Copyright. All rights reserved.</p>
             </div>
-            <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
+            <a href="/" className='font-montserrat cursor-pointer'>Terms & Conditions</a>
           </div>
 
         </footer>

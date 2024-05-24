@@ -2,16 +2,11 @@
 
 import { useState } from "react";
 
-import { shoes, statistics } from "../constants";
-//import { Button, ShoeCard } from "../components";
+import { heroItems } from "../constants";
 import { bigShoe1 } from "../../public/images";
-import { arrowRight, software } from "../../public/icons";
 import Container from "@/components/container/container";
-import Image from "next/image";
-import { Button } from "@/components/ui/button"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
-import { FaHome, FaInfoCircle, FaEnvelope } from 'react-icons/fa';
 import EmailCapture from "./EmailCapture";
 
 
@@ -44,62 +39,22 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center block w-full lg:w-1/2">
           <div className="w-full items-center block justify-between border border-blue-100 rounded-lg float-right ml-20 bg-white p-2 ">
-            <Link href="/" className="flex w-full block p-1 items-center p-3 rounded-md hover:bg-gray-100">
-              <div className="flex flex-row w-1/6 block">
-                <img
-                  className="p-1"
-                  src="/icons/crm_1.svg"
-                  height={50}
-                  width={50}
-                />
-              </div>
-              <div className="flex flex-col w-5/6 block">
-                <span className="w-full fletext-base text-[22px] font-normal">ERP</span><br />
-                <span className="w-full text-base text-sm font-normal">With Inventory Management, POS, Online Shop & HRM</span>
-              </div>
-            </Link>
-            <Link href="/" className="flex w-full block p-1 items-center p-3 rounded-md hover:bg-gray-100">
-              <div className="flex flex-row w-1/6 block">
-                <img
-                  className="p-1"
-                  src="/icons/crm_1.svg"
-                  height={50}
-                  width={50}
-                />
-              </div>
-              <div className="flex flex-col w-5/6 block">
-                <span className="w-full fletext-base text-[22px] font-normal">ERP</span><br />
-                <span className="w-full text-base text-sm font-normal">With Inventory Management, POS, Online Shop & HRM</span>
-              </div>
-            </Link>
-            <Link href="/" className="flex w-full block p-1 items-center p-3 rounded-md hover:bg-gray-100">
-              <div className="flex flex-row w-1/6 block">
-                <img
-                  className="p-1"
-                  src="/icons/crm_1.svg"
-                  height={50}
-                  width={50}
-                />
-              </div>
-              <div className="flex flex-col w-5/6 block">
-                <span className="w-full fletext-base text-[22px] font-normal">ERP</span><br />
-                <span className="w-full text-base text-sm font-normal">With Inventory Management, POS, Online Shop & HRM</span>
-              </div>
-            </Link>
-            <Link href="/" className="flex w-full block p-1 items-center p-3 rounded-md hover:bg-gray-100">
-              <div className="flex flex-row w-1/6 block">
-                <img
-                  className="p-1"
-                  src="/icons/crm_1.svg"
-                  height={50}
-                  width={50}
-                />
-              </div>
-              <div className="flex flex-col w-5/6 block">
-                <span className="w-full fletext-base text-[22px] font-normal">ERP</span><br />
-                <span className="w-full text-base text-sm font-normal">With Inventory Management, POS, Online Shop & HRM</span>
-              </div>
-            </Link>
+            {heroItems.map((heroItem) => (
+              <Link href={heroItem.link} className="flex w-full block p-1 items-center p-3 rounded-md hover:bg-gray-100">
+                <div className="flex flex-row w-1/6 block">
+                  <img
+                    className="p-1"
+                    src={heroItem.itemIcon}
+                    height={50}
+                    width={50}
+                  />
+                </div>
+                <div className="flex flex-col w-5/6 block">
+                  <span className="w-full fletext-base text-[22px] font-normal">{heroItem.item}</span><br />
+                  <span className="w-full text-base text-[13px] font-normal leading-5">{heroItem.description}</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </Container>

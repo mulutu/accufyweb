@@ -31,7 +31,7 @@ export default function CustomerSlider<CustomSliderProps>({ slides } :  any) {
             </div>
             <div className=" relative w-full h-screen">
                 <div className="relative ">
-                    {slides.map((slide, index) => (
+                    {slides.map((slide : any, index : any ) => (
                         <div
                             key={index}
                             className={`absolute top-0 left-0 w-full ${index === currentSlideIndex ? 'block' : 'hidden'
@@ -42,7 +42,7 @@ export default function CustomerSlider<CustomSliderProps>({ slides } :  any) {
                     ))}
                 </div>
                 <div className="absolute bottom-4 top-3/4 left-0 w-full flex justify-center">
-                    {slides.map((_, index) => (
+                    {slides.map((_ : any, index :  any) => (
                         <button
                             key={index}
                             className={`w-2 h-2 mx-1 rounded-full focus:outline-none ${index === currentSlideIndex ? 'bg-black' : 'bg-gray-400'

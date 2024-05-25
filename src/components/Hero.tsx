@@ -23,7 +23,7 @@ const Hero = () => {
                 Work <p className="inline-block border-b-2 border-orange-500 font-bold ">smarter</p>, not harder
               </span>
               <br />
-              <span className='xl:whitespace-nowrap relative z-10 pr-5 '>for your business.</span>
+              <span className='xl:whitespace-nowrap relative z-10 pr-5 '>to build your business.</span>
             </h1>
             <p className='font-montserrat text-slate-gray text-lg leading-6 mt-6 mb-14 sm:max-w-sm'>
               Solutions tailored specifically for SMEs, to streamline operations, boost productivity, and give you more time to focus on what matters most.

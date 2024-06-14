@@ -27,16 +27,16 @@ export default function Home() {
       <section className='xl:padding-l wide:padding-r padding-b bg-blue-50 bg-opacity-50'>
         <Hero />
       </section>
-      <section className="flex w-full block padding">
+      <section className="flex w-full padding">
         <Brands />
       </section>
-      <section className="flex w-full block bg-pale-blue padding bg-blue-100 bg-opacity-50">
+      <section className="flex w-full bg-pale-blue padding bg-blue-100 bg-opacity-50">
         <Solutions />
       </section>
-      <section className="flex w-full h-full block padding pb-0 pt-0">
+      <section className="flex w-full h-full padding pb-0 pt-0">
         <CustomerSlider slides={slides}  />
       </section>
-      <section className="flex w-full h-full block padding pb-0 pt-0">
+      <section className="flex w-full h-full padding pb-0 pt-0">
         <EmailNewsletter />
       </section>
     </>

@@ -66,8 +66,6 @@ const ContactUsForm = () => {
     setLoading(true);
 
     try {
-      //const response = await addSubscriber(data);
-
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
